@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * MainClass of Quidditch
  * 
  * @author Matti Schmidt
- * @version 0.1
+ * @version 0.2
  */
 public class Game extends World
 {
@@ -22,5 +22,9 @@ public class Game extends World
         Greenfoot.start();
         Greenfoot.setSpeed(70);
         setBackground(BACKGROUND);
+        
+        // spawn Harry Potter as character on 100 and height/2
+        Harry character = new Harry();
+        addObject(character, 100, getHeight() / 2);
     }
 }

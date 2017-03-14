@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * object of the character of the game
  * 
  * @author Matti Schmidt 
- * @version 0.1
+ * @version 0.2
  */
 public class Harry extends GameMember
 {
