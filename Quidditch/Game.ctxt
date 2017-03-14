@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\r\n\ MainClass\ of\ Quidditch\r\n\ \r\n\ @author\ Matti\ Schmidt\r\n\ @version\ 0.1\r\n
+comment1.params=
+comment1.target=Game()
+comment1.text=\r\n\ Constructor\ for\ the\ Game.\r\n\ \r\n
+numComments=2
