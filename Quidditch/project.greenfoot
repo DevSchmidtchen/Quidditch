@@ -1,8 +1,13 @@
 #Greenfoot properties
-#Tue Mar 14 12:09:05 CET 2017
+#Tue Mar 14 12:36:50 CET 2017
+simulation.speed=70
+class.GameMember.superclass=greenfoot.Actor
+mainWindow.width=850
 project.charset=UTF-8
 version=2.8.0
+class.Game.superclass=greenfoot.World
+world.lastInstantiated=Game
 mainWindow.y=40
 mainWindow.x=40
+class.Harry.superclass=GameMember
 mainWindow.height=600
-mainWindow.width=850
