@@ -18,7 +18,7 @@ public class Game extends World
     public Game()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(288, 400, 1, false);
+        super(288, 400, 1);
         Greenfoot.start();
         Greenfoot.setSpeed(50);
         setBackground(BACKGROUND);

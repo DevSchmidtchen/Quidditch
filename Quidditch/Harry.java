@@ -34,7 +34,7 @@ public class Harry extends GameMember
 
     private void applyGravity() {
         setLocation(getX(), (int) (getY() + velocity));
-        velocity+=GRAVITY;
+        velocity = velocity + GRAVITY;
     }
 
     private void checkKeys() {
