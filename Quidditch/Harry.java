@@ -4,19 +4,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * object of the character of the game
  * 
  * @author Matti Schmidt 
- * @version 0.4
+ * @version 0.5
  */
 public class Harry extends GameMember
 {
 
-    private static final GreenfootImage HARRY_FRONT = new GreenfootImage("HarryPotter Front.png");
+    private static final GreenfootImage HARRY_FRONT = new GreenfootImage("HarryPotter_Front.png");
+    private static final GreenfootImage HARRY_DOWN = new GreenfootImage("HarryPotter_Fly_Down.png");
 
     private double velocity = 0;
     private static final double GRAVITY = 0.5;
-    private static final double BOOSTSPEED = -6;
+    private static final double BOOSTSPEED = -6.0;
 
     public Harry() {
         setImage(HARRY_FRONT);
+        this.animationDelay = 4;
     }
 
     /**
@@ -27,6 +29,7 @@ public class Harry extends GameMember
     {
         applyGravity();
         checkKeys();
+        animateHarry();
     }    
 
     private void applyGravity() {
@@ -35,8 +38,15 @@ public class Harry extends GameMember
     }
 
     private void checkKeys() {
-        if (Greenfoot.isKeyDown("space") || Greenfoot.mouseClicked(null)) {
-            velocity = GRAVITY;
+        if (Greenfoot.isKeyDown("space") == true || Greenfoot.mouseClicked(null) == true) {
+            velocity = BOOSTSPEED;
+            setImage(HARRY_FRONT);
+        } else {
+            setImage(HARRY_DOWN);
         }
+    }
+    
+    private void animateHarry() {
+        //TODO create images
     }
 }

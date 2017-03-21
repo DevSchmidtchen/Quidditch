@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Harry
-comment0.text=\r\n\ object\ of\ the\ character\ of\ the\ game\r\n\ \r\n\ @author\ Matti\ Schmidt\ \r\n\ @version\ 0.\r\n
+comment0.text=\r\n\ object\ of\ the\ character\ of\ the\ game\r\n\ \r\n\ @author\ Matti\ Schmidt\ \r\n\ @version\ 0.5\r\n
 comment1.params=
 comment1.target=Harry()
 comment2.params=
@@ -10,4 +10,6 @@ comment3.params=
 comment3.target=void\ applyGravity()
 comment4.params=
 comment4.target=void\ checkKeys()
-numComments=5
+comment5.params=
+comment5.target=void\ animateHarry()
+numComments=6

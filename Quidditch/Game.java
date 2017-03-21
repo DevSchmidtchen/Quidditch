@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * MainClass of Quidditch
  * 
  * @author Matti Schmidt
- * @version 0.4
+ * @version 0.5
  */
 public class Game extends World
 {
@@ -18,9 +18,9 @@ public class Game extends World
     public Game()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(288, 400, 1); 
+        super(288, 400, 1, false);
         Greenfoot.start();
-        Greenfoot.setSpeed(70);
+        Greenfoot.setSpeed(50);
         setBackground(BACKGROUND);
         
         // spawn Harry Potter as character on 100 and height/2
