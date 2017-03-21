@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * MainClass of Quidditch
  * 
  * @author Matti Schmidt
- * @version 0.3
+ * @version 0.4
  */
 public class Game extends World
 {
