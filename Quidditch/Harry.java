@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * object of the character of the game
  * 
  * @author Matti Schmidt 
- * @version 0.5
+ * @version 0.6
  */
 public class Harry extends GameMember
 {
@@ -29,7 +29,8 @@ public class Harry extends GameMember
     {
         applyGravity();
         checkKeys();
-        animateHarry();
+        animate();
+        rotate();
     }    
 
     private void applyGravity() {
@@ -46,7 +47,19 @@ public class Harry extends GameMember
         }
     }
     
-    private void animateHarry() {
+    private void animate() {
         //TODO create images
+    }
+    
+    private void rotate() {
+        if (velocity < 1) {
+            setRotation(-30);
+        } else if (velocity < 8) {
+            setRotation(0);
+        } else if (velocity < 12) {
+            setRotation(30);
+        } else if (velocity < 30) {
+            setRotation(90);
+        }
     }
 }
