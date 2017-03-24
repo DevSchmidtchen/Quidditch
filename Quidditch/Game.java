@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * MainClass of Quidditch
  * 
  * @author Matti Schmidt
- * @version 0.7
+ * @version 0.8
  */
 public class Game extends World
 {
@@ -15,10 +15,9 @@ public class Game extends World
      * Constructor for the Game.
      * 
      */
-    public Game()
-    {    
+    public Game() {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(288, 400, 1);
+        super(288, 400, 1, false);
         Greenfoot.start();
         Greenfoot.setSpeed(50);
         setBackground(BACKGROUND);
@@ -29,6 +28,17 @@ public class Game extends World
         
         // generate underground
         Ground underground = new Ground();
-        addObject(underground, 0, getHeight());
+        addObject(underground, 150, getHeight());
+    }
+    
+    public void act() {
+        createGround();
+    }
+    
+    private void createGround() {
+        if (getObjects(Ground.class).size() < 2) {
+            Ground additionalGround = new Ground();
+            addObject(additionalGround, 450, getHeight());
+        }
     }
 }

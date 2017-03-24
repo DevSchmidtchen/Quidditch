@@ -4,10 +4,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * this class is used to store shared information about the members of the game
  * 
  * @author Matti Schmidt 
- * @version 0.7
+ * @version 0.8
  */
 public class GameMember extends Actor
 {
     protected int frame;
     protected int animationDelay;
+    protected int xSpeed;
+    
+    protected void moveLeft() {
+        setLocation(getX() - xSpeed, getY());
+    }
 }

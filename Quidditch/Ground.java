@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Ground is the underground of the game to achieve a movement effect
  * 
  * @author Matti Schmidt
- * @version 0.7
+ * @version 0.8
  */
 public class Ground extends GameMember
 {
@@ -13,6 +13,7 @@ public class Ground extends GameMember
     
     public Ground() {
         setImage(GROUND);
+        this.xSpeed = 4;
     }
     
     /**
@@ -21,6 +22,13 @@ public class Ground extends GameMember
      */
     public void act() 
     {
-        // Add your action code here.
+        this.moveLeft();
+        remove();
     }    
+    
+    private void remove() {
+        if (getX() < - getImage().getWidth() / 2) {
+            getWorld().removeObject(this);
+        }
+    }
 }
