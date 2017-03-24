@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * this class is used to store shared information about the members of the game
  * 
  * @author Matti Schmidt 
- * @version 0.6
+ * @version 0.7
  */
 public class GameMember extends Actor
 {
