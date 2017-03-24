@@ -1,17 +1,21 @@
 #BlueJ class context
 comment0.target=Harry
-comment0.text=\n\ object\ of\ the\ character\ of\ the\ game\n\ \n\ @author\ Matti\ Schmidt\ \n\ @version\ 0.8\n
+comment0.text=\n\ object\ of\ the\ character\ of\ the\ game\n\ \n\ @author\ Matti\ Schmidt\ \n\ @version\ 0.9\n
 comment1.params=
 comment1.target=Harry()
 comment2.params=
 comment2.target=void\ act()
 comment2.text=\n\ Act\ -\ do\ whatever\ the\ Harry\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment3.params=
-comment3.target=void\ applyGravity()
+comment3.target=void\ reset()
 comment4.params=
-comment4.target=void\ checkKeys()
+comment4.target=void\ applyGravity()
 comment5.params=
-comment5.target=void\ animate()
+comment5.target=void\ checkKeys()
 comment6.params=
-comment6.target=void\ rotate()
-numComments=7
+comment6.target=void\ animate()
+comment7.params=
+comment7.target=void\ rotate()
+comment8.params=
+comment8.target=void\ checkCollision()
+numComments=9

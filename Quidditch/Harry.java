@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * object of the character of the game
  * 
  * @author Matti Schmidt 
- * @version 0.8
+ * @version 0.9
  */
 public class Harry extends GameMember
 {
@@ -31,7 +31,14 @@ public class Harry extends GameMember
         checkKeys();
         animate();
         rotate();
+        checkCollision();
     }    
+    
+    private void reset() {
+        velocity = 0.0;
+        setRotation(0);
+        setImage(HARRY_FRONT);
+    }
 
     private void applyGravity() {
         setLocation(getX(), (int) (getY() + velocity));
@@ -60,6 +67,15 @@ public class Harry extends GameMember
             setRotation(30);
         } else if (velocity < 30) {
             setRotation(90);
+        }
+    }
+    
+    private void checkCollision() {
+        Actor collisionObject = getOneIntersectingObject(Ground.class);
+        if (collisionObject != null) {
+            setLocation(getX(), getWorld().getHeight() / 2);
+            reset();
+            Greenfoot.stop();
         }
     }
 }

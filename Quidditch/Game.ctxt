@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Game
-comment0.text=\n\ MainClass\ of\ Quidditch\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.8\n
+comment0.text=\n\ MainClass\ of\ Quidditch\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.9\n
 comment1.params=
 comment1.target=Game()
 comment1.text=\n\ Constructor\ for\ the\ Game.\n\ \n
