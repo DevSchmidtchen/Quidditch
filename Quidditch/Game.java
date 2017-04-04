@@ -24,7 +24,7 @@ public class Game extends World
         
         // spawn Harry Potter as character on 100 and height/2
         Harry character = new Harry();
-        addObject(character, 100, getHeight() / 2);
+        addObject(character, 100, getHeight()/2);
         
         // generate underground
         Ground underground = new Ground();

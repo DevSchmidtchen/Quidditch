@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Game
-comment0.text=\n\ MainClass\ of\ Quidditch\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.9\n
+comment0.text=\r\n\ MainClass\ of\ Quidditch\r\n\ \r\n\ @author\ Matti\ Schmidt\r\n\ @version\ 0.9\r\n
 comment1.params=
 comment1.target=Game()
-comment1.text=\n\ Constructor\ for\ the\ Game.\n\ \n
+comment1.text=\r\n\ Constructor\ for\ the\ Game.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

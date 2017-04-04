@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=Ground
-comment0.text=\n\ Ground\ is\ the\ underground\ of\ the\ game\ to\ achieve\ a\ movement\ effect\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.9\n
+comment0.text=\r\n\ Ground\ is\ the\ underground\ of\ the\ game\ to\ achieve\ a\ movement\ effect\r\n\ \r\n\ @author\ Matti\ Schmidt\r\n\ @version\ 0.9\r\n
 comment1.params=
 comment1.target=Ground()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\n\ Act\ -\ do\ whatever\ the\ Ground\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Ground\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=
 comment3.target=void\ remove()
 numComments=4
