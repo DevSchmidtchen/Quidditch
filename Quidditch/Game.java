@@ -1,15 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * MainClass of Quidditch
+ * Quidditch is real and you can play it! NOW! PLAY! For only 66,66€
  * 
  * @author Matti Schmidt
- * @version 0.10
+ * @version 0.11
  */
 public class Game extends World
 {
 
     private static final GreenfootImage BACKGROUND = new GreenfootImage("BackGround Der Echte.png");
+    private int pipeCount;
     
     /**
      * Constructor for the Game.
@@ -33,12 +34,39 @@ public class Game extends World
     
     public void act() {
         createGround();
+        createPipe();
     }
     
     private void createGround() {
         if (getObjects(Ground.class).size() < 2) {
             Ground additionalGround = new Ground();
             addObject(additionalGround, 450, getHeight());
+        }
+    }
+    
+    private void createPipe() {
+        Pipe top_pipe = new Pipe(Pipe.PipeType.TOP);
+        Pipe bottom_pipe = new Pipe(Pipe.PipeType.BOTTOM);
+        
+        int pipeSpacing = 150;
+        
+        GreenfootImage image = bottom_pipe.getImage();
+        
+        int numOfPipes = Greenfoot.getRandomNumber(10) + 4;
+        
+        pipeCount++;
+        if (pipeCount == 50) {
+            if (getObjects(Pipe.class).size() < numOfPipes) {
+                addObject(bottom_pipe, getWidth(), getHeight() / 2 + image.getHeight() - Greenfoot.getRandomNumber(100) - 10);
+                addObject(top_pipe, getWidth(), bottom_pipe.getY() - image.getHeight() - pipeSpacing);
+            }
+            pipeCount = 0;
+       
+        
+        }
+        
+        public void reset() {
+        
         }
     }
 }

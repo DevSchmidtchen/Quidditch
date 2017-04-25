@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * obstacle
  * 
  * @author Matti Schmidt
- * @version 0.10
+ * @version 0.11
  */
 public class Pipe extends GameMember
 {
@@ -13,6 +13,7 @@ public class Pipe extends GameMember
     private static final GreenfootImage TOP_OBSTACLE = new GreenfootImage("top_pipe.png");
     
     public Pipe(PipeType type) {
+        this.xSpeed = 4;
         switch (type) {
             case TOP:
                 setImage(TOP_OBSTACLE);
@@ -29,7 +30,14 @@ public class Pipe extends GameMember
      */
     public void act() 
     {
-        // Add your action code here.
+        this.moveLeft();
+        removePipe();
+    }
+    
+    public void removePipe() {
+        if (getX() < - getImage().getWidth()) {
+            this.getWorld().removeObject(this);
+        }
     }
     
     public enum PipeType {
