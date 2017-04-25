@@ -64,9 +64,9 @@ public class Game extends World
        
         
         }
+    }
+    
+    public void reset() {
         
-        public void reset() {
-        
-        }
     }
 }
