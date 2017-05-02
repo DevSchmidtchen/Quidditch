@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Quidditch is real and you can play it! NOW! PLAY! For only 66,66€
  * 
  * @author Matti Schmidt
- * @version 0.11
+ * @version 0.12
  */
 public class Game extends World
 {
@@ -22,6 +22,9 @@ public class Game extends World
         Greenfoot.start();
         Greenfoot.setSpeed(50);
         setBackground(BACKGROUND);
+        
+        // set paint order
+        setPaintOrder(Ground.class, Harry.class, Pipe.class);
         
         // spawn Harry Potter as character on 100 and height/2
         Harry character = new Harry();

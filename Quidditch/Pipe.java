@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * obstacle
  * 
  * @author Matti Schmidt
- * @version 0.11
+ * @version 0.12
  */
 public class Pipe extends GameMember
 {
