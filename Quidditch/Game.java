@@ -4,13 +4,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Quidditch is real and you can play it! NOW! PLAY! For only 66,66€
  * 
  * @author Matti Schmidt
- * @version 0.13
+ * @version 0.14
  */
 public class Game extends World
 {
 
     private static final GreenfootImage BACKGROUND = new GreenfootImage("BackGround Der Echte.png");
     private int pipeCount;
+    private GameScore gameScore = new GameScore();
     
     /**
      * Constructor for the Game.
@@ -24,7 +25,7 @@ public class Game extends World
         setBackground(BACKGROUND);
         
         // set paint order
-        setPaintOrder(Ground.class, Harry.class, Pipe.class);
+        setPaintOrder(GameScore.class, Ground.class, Harry.class, Pipe.class);
         
         // spawn Harry Potter as character on 100 and height/2
         Harry character = new Harry();
@@ -33,6 +34,9 @@ public class Game extends World
         // generate underground
         Ground underground = new Ground();
         addObject(underground, 150, getHeight());
+        
+        addObject(gameScore, getWidth() / 2 + 25, 30);
+        gameScore.setScore(0);
     }
     
     public void act() {

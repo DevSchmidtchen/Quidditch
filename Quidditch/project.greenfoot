@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Tue May 02 12:19:07 CEST 2017
+#Tue May 02 12:38:36 CEST 2017
 target4.type=ClassTarget
 dependency3.from=Harry
 target3.height=50
@@ -22,6 +22,7 @@ dependency4.type=UsesDependency
 target2.width=80
 target5.name=Pipe
 version=2.8.0
+class.GameScore.superclass=greenfoot.Actor
 dependency1.to=Harry
 dependency2.to=Ground
 target1.width=80
@@ -40,8 +41,8 @@ editor.swing.0.y=-4
 target1.typeParameters=
 editor.swing.0.x=-4
 target2.height=50
-target5.y=130
 target4.height=50
+target5.y=130
 target5.x=10
 target1.name=Game
 target4.y=70
@@ -73,10 +74,10 @@ dependency2.from=Game
 dependency2.type=UsesDependency
 target5.typeParameters=
 world.lastInstantiated=Game
-mainWindow.height=1060
 target2.showInterface=false
+mainWindow.height=1060
 editor.swing.0.height=1060
 target3.name=GameMember
-project.charset=UTF-8
 target3.width=100
+project.charset=UTF-8
 target4.showInterface=false
