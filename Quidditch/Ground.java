@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Ground is the underground of the game to achieve a movement effect
  * 
  * @author Matti Schmidt
- * @version 0.14
+ * @version 0.15
  */
 public class Ground extends GameMember
 {

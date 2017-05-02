@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Game
-comment0.text=\r\n\ Quidditch\ is\ real\ and\ you\ can\ play\ it\!\ NOW\!\ PLAY\!\ For\ only\ 66,66\u20AC\r\n\ \r\n\ @author\ Matti\ Schmidt\r\n\ @version\ 0.14\r\n
+comment0.text=\r\n\ Quidditch\ is\ real\ and\ you\ can\ play\ it\!\ NOW\!\ PLAY\!\ For\ only\ 66,66\u20AC\r\n\ \r\n\ @author\ Matti\ Schmidt\r\n\ @version\ 0.15\r\n
 comment1.params=
 comment1.target=Game()
 comment1.text=\r\n\ Constructor\ for\ the\ Game.\r\n\ \r\n
@@ -11,5 +11,7 @@ comment3.target=void\ createGround()
 comment4.params=
 comment4.target=void\ createPipe()
 comment5.params=
-comment5.target=void\ reset()
-numComments=6
+comment5.target=GameScore\ getGameScore()
+comment6.params=
+comment6.target=void\ reset()
+numComments=7

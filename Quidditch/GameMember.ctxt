@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=GameMember
-comment0.text=\r\n\ this\ class\ is\ used\ to\ store\ shared\ information\ about\ the\ members\ of\ the\ game\r\n\ \r\n\ @author\ Matti\ Schmidt\ \r\n\ @version\ 0.14\r\n
+comment0.text=\r\n\ this\ class\ is\ used\ to\ store\ shared\ information\ about\ the\ members\ of\ the\ game\r\n\ \r\n\ @author\ Matti\ Schmidt\ \r\n\ @version\ 0.15\r\n
 comment1.params=
 comment1.target=void\ moveLeft()
 numComments=2

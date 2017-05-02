@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Quidditch is real and you can play it! NOW! PLAY! For only 66,66€
  * 
  * @author Matti Schmidt
- * @version 0.14
+ * @version 0.15
  */
 public class Game extends World
 {
@@ -71,6 +71,10 @@ public class Game extends World
        
         
         }
+    }
+    
+    public GameScore getGameScore() {
+        return gameScore;
     }
     
     public void reset() {
