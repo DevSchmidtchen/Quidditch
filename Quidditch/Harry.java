@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * object of the character of the game
  * 
  * @author Matti Schmidt 
- * @version 0.12
+ * @version 0.13
  */
 public class Harry extends GameMember
 {
@@ -71,9 +71,12 @@ public class Harry extends GameMember
     }
     
     private void checkCollision() {
-        Actor collisionObject = getOneIntersectingObject(Ground.class);
-        if (collisionObject != null) {
-            setLocation(getX(), getWorld().getHeight() / 2);
+        Actor collisionGround = getOneIntersectingObject(Ground.class);
+        Actor collisionPipe = getOneIntersectingObject(Pipe.class);
+        if (collisionGround != null || collisionPipe != null) {
+            if (collisionGround != null) {
+                setLocation(getX(), getWorld().getHeight() / 2);
+            }
             reset();
             Greenfoot.stop();
         }
