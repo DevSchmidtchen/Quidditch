@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Mon May 22 18:15:28 CEST 2017
+#Mon May 22 19:39:47 CEST 2017
 target4.type=ClassTarget
 dependency3.from=Harry
 target3.height=50
@@ -22,6 +22,7 @@ mainWindow.width=1928
 dependency4.type=UsesDependency
 target2.width=80
 target5.name=Pipe
+class.Medal.superclass=greenfoot.Actor
 version=3.0.0
 class.GameScore.superclass=greenfoot.Actor
 class.ScoreCollider.superclass=GameMember
@@ -47,13 +48,14 @@ target4.height=50
 target5.y=130
 target5.x=10
 target1.name=Game
-class.Introduction.superclass=greenfoot.Actor
+class.Instruction.superclass=greenfoot.Actor
 target4.y=70
 target4.x=160
 class.Harry.superclass=GameMember
 target3.y=10
 target3.x=160
 target2.type=ClassTarget
+class.GameOver.superclass=greenfoot.Actor
 target2.y=70
 target2.x=70
 mainWindow.y=-4
@@ -82,6 +84,7 @@ mainWindow.height=1060
 class.TitleButton.superclass=greenfoot.Actor
 editor.swing.0.height=1060
 target3.name=GameMember
+class.Scoreboard.superclass=greenfoot.Actor
 target3.width=100
 project.charset=UTF-8
 target4.showInterface=false

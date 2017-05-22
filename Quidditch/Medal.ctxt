@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Medal
+comment0.text=\n\ @author\ Matti\ Schmidt\ \n\ @version\ 0.20\n
+comment1.params=type
+comment1.target=Medal(Medal.MedalType)
+numComments=2

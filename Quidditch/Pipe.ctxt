@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Pipe
-comment0.text=\n\ obstacle\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.19\n
+comment0.text=\n\ obstacle\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.20\n
 comment1.params=type
 comment1.target=Pipe(Pipe.PipeType)
 comment2.params=

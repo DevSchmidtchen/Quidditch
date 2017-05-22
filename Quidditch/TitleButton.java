@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * @author Matti Schmidt
- * @version 0.19
+ * @version 0.20
  */
 public class TitleButton extends Actor
 {
