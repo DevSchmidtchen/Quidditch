@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * object of the character of the game
  * 
  * @author Matti Schmidt 
- * @version 0.20
+ * @version 0.21
  */
 public class Harry extends GameMember
 {
@@ -29,7 +29,6 @@ public class Harry extends GameMember
     {
         applyGravity();
         checkKeys();
-        animate();
         rotate();
         upperBoundary();
         checkCollision();
@@ -47,16 +46,12 @@ public class Harry extends GameMember
     }
 
     private void checkKeys() {
-        if (Greenfoot.isKeyDown("space") == true || Greenfoot.mouseClicked(null) == true) {
+        if (Greenfoot.isKeyDown("space") || Greenfoot.mouseClicked(null)) {
             velocity = BOOSTSPEED;
             setImage(HARRY_FRONT);
         } else {
             setImage(HARRY_DOWN);
         }
-    }
-    
-    private void animate() {
-        //TODO create images
     }
     
     private void rotate() {
@@ -73,13 +68,11 @@ public class Harry extends GameMember
     
     private void checkCollision() {
         Actor collisionGround = getOneIntersectingObject(Ground.class);
-        Actor collisionPipe = getOneIntersectingObject(Pipe.class);
-        if (collisionGround != null || collisionPipe != null) {
-            if (collisionGround != null) {
-                setLocation(getX(), getWorld().getHeight() / 2);
-            }
-            reset();
-            Greenfoot.stop();
+        Actor collisionOpponent = getOneIntersectingObject(Opponent.class);
+        if (collisionGround != null || collisionOpponent != null) {
+            Game level = (Game) getWorld();
+            level.showGameOverScreen = true;
+            level.removeObject(this);
         }
     }
     

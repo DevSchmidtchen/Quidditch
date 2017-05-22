@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * @author Matti Schmidt
- * @version 0.20
+ * @version 0.21
  */
 public class GameOver extends Actor
 {
@@ -10,10 +10,5 @@ public class GameOver extends Actor
     
     public GameOver() {
         setImage(GAME_OVER);
-    }
-    
-    public void act() 
-    {
-        
-    }    
+    }  
 }

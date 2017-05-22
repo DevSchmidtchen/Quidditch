@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Instruction
-comment0.text=\n\ @author\ Matti\ Schmidt\n\ @version\ 0.20\n
+comment0.text=\n\ @author\ Matti\ Schmidt\n\ @version\ 0.21\n
 comment1.params=instructionSelection
 comment1.target=Instruction(Instruction.InstructionSelection)
 comment2.params=

@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * @author Matti Schmidt 
- * @version 0.20
+ * @version 0.21
  */
 public class Medal extends Actor
 {

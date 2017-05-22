@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Opponent
+comment0.text=\n\ @author\ Matti\ Schmidt\n\ @version\ 1.0\n
+comment1.params=speed
+comment1.target=Opponent(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ moveAtPosition()
+comment4.params=
+comment4.target=void\ removeOpponent()
+numComments=5

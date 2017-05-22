@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=GameScore
-comment0.text=\n\ GameScore\ of\ a\ player\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.20\n
+comment0.text=\n\ GameScore\ of\ a\ player\n\ \n\ @author\ Matti\ Schmidt\n\ @version\ 0.21\n
 comment1.params=
 comment1.target=GameScore()
 comment2.params=score
