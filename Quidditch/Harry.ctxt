@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Harry
-comment0.text=\n\ object\ of\ the\ character\ of\ the\ game\n\ \n\ @author\ Matti\ Schmidt\ \n\ @version\ 0.15\n
+comment0.text=\n\ object\ of\ the\ character\ of\ the\ game\n\ \n\ @author\ Matti\ Schmidt\ \n\ @version\ 0.16\n
 comment1.params=
 comment1.target=Harry()
 comment2.params=
@@ -18,4 +18,6 @@ comment7.params=
 comment7.target=void\ rotate()
 comment8.params=
 comment8.target=void\ checkCollision()
-numComments=9
+comment9.params=
+comment9.target=void\ upperBoundary()
+numComments=10

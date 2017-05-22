@@ -5,7 +5,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Write a description of class ScoreCollider here.
  * 
  * @author Matti Schmidt
- * @version 0.15
+ * @version 0.16
  */
 public class ScoreCollider extends GameMember
 {

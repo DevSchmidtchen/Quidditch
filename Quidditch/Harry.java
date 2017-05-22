@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * object of the character of the game
  * 
  * @author Matti Schmidt 
- * @version 0.15
+ * @version 0.16
  */
 public class Harry extends GameMember
 {
@@ -31,6 +31,7 @@ public class Harry extends GameMember
         checkKeys();
         animate();
         rotate();
+        upperBoundary();
         checkCollision();
     }    
     
@@ -79,6 +80,12 @@ public class Harry extends GameMember
             }
             reset();
             Greenfoot.stop();
+        }
+    }
+    
+    private void upperBoundary() {
+        if (this.getY() <= 14) {
+            setLocation(getX(), 14);
         }
     }
 }
