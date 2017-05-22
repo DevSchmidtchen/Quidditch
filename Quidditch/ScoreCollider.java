@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.Color;
+
 
 /**
  * Write a description of class ScoreCollider here.
@@ -17,6 +17,7 @@ public class ScoreCollider extends GameMember
         image.setColor(Color.RED);
         image.fill();
         setImage(image);
+        image.setTransparency(0);
     }
     
     /**
@@ -33,8 +34,10 @@ public class ScoreCollider extends GameMember
         Actor harry = getOneIntersectingObject(Harry.class);
         if (harry != null) {
             Game level = (Game) getWorld();
-            GameScore score = level.getScore();
+            GameScore score = level.getGameScore();
             score.setScore(1);
+            getWorld().removeObject(this);
+        } else if (getX() < -getImage().getWidth()) {
             getWorld().removeObject(this);
         }
     }

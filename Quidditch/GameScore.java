@@ -1,6 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.Color;
-import java.awt.Font;
 
 /**
  * GameScore of a player
@@ -28,16 +26,16 @@ public class GameScore extends Actor
         scoreImage.setColor(color);
         scoreImage.fill();
         
-        Font font = new Font("Impact", Font.PLAIN, 32);
+        Font font = new Font("Impact", true, false, 32);
         scoreImage.setFont(font);
         scoreImage.setColor(Color.BLACK);
-        scoreImage.drawString(this.score + "", 2, 30);
+        scoreImage.drawString(String.valueOf(this.score), 2, 30);
         scoreImage.setColor(Color.WHITE);
-        scoreImage.drawString(this.score + "", 0, 30);
+        scoreImage.drawString(String.valueOf(this.score), 0, 30);
         setImage(scoreImage);
     }
     
     public int getScore() {
-        return score;
+        return this.score;
     }
 }

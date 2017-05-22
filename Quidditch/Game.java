@@ -52,6 +52,8 @@ public class Game extends World
     }
     
     private void createPipe() {
+        ScoreCollider scoreCollider = new ScoreCollider();
+        
         Pipe top_pipe = new Pipe(Pipe.PipeType.TOP);
         Pipe bottom_pipe = new Pipe(Pipe.PipeType.BOTTOM);
         
@@ -66,10 +68,9 @@ public class Game extends World
             if (getObjects(Pipe.class).size() < numOfPipes) {
                 addObject(bottom_pipe, getWidth(), getHeight() / 2 + image.getHeight() - Greenfoot.getRandomNumber(100) - 10);
                 addObject(top_pipe, getWidth(), bottom_pipe.getY() - image.getHeight() - pipeSpacing);
+                addObject(scoreCollider, getWidth() + 20, getHeight() / 2);
             }
             pipeCount = 0;
-       
-        
         }
     }
     
