@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Quidditch is real and you can play it! NOW! PLAY! For only 66,66€
  * 
  * @author Matti Schmidt
- * @version 0.16
+ * @version 0.17
  */
 public class Game extends World
 {
@@ -18,7 +18,6 @@ public class Game extends World
      * 
      */
     public Game() {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(288, 400, 1, false);
         Greenfoot.start();
         Greenfoot.setSpeed(50);
