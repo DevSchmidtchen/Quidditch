@@ -56,7 +56,7 @@ public class Game extends World
             removeObject(title);
             removeObject(titleButton);
             addObject(ready, getWidth() / 2, getHeight() / 2 - 75);
-            addObject(tap, getWidth() / 2, getHeight() / 2 + 50);
+            addObject(tap, getWidth() / 2, getHeight() / 2 + 10);
             instructionObjectsAdded = true;
         } else if (playGame) {
             removeObject(ready);

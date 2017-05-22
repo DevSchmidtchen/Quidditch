@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=TitleButton
-comment0.text=\n\ @author\ Matti\ Schmidt\n\ @version\ 0.18\n
+comment0.text=\n\ @author\ Matti\ Schmidt\n\ @version\ 0.19\n
 comment1.params=
 comment1.target=TitleButton()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ startGame()
+comment3.target=void\ showInstructions()
 numComments=4

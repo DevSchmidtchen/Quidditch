@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * @author Matti Schmidt
- * @version 0.18
+ * @version 0.19
  */
 public class TitleButton extends Actor
 {
@@ -13,14 +13,13 @@ public class TitleButton extends Actor
     }
     
     public void act() {
-        startGame();
+        showInstructions();
     }
     
-    private void startGame() {
-        
+    private void showInstructions() {
         if (Greenfoot.mouseClicked(this) || "space".equalsIgnoreCase(Greenfoot.getKey())) {
             Game level = (Game) getWorld();
-            level.playGame = true;
+            level.showInstructionScreen = true;
         }
     }
 }
