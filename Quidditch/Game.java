@@ -4,14 +4,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Quidditch is real and you can play it! NOW! PLAY! For only 66,66€
  * 
  * @author Matti Schmidt
- * @version 0.17
+ * @version 0.18
  */
 public class Game extends World
 {
 
     private static final GreenfootImage BACKGROUND = new GreenfootImage("BackGround Der Echte.png");
     private int pipeCount;
+    
+    public boolean showTitleScreen = true;
+    public boolean playGame = false;
+    private boolean addFaby = true;
+    private boolean titleObjectsAdded = false;
+    private boolean gameObjectsAdded = false;
+    
     private GameScore gameScore = new GameScore();
+    private Title title = new Title();
+    private TitleButton titleButton = new TitleButton();
+    private Harry harry = new Harry();
     
     /**
      * Constructor for the Game.
@@ -26,21 +36,32 @@ public class Game extends World
         // set paint order
         setPaintOrder(GameScore.class, Ground.class, Harry.class, Pipe.class);
         
-        // spawn Harry Potter as character on 100 and height/2
-        Harry character = new Harry();
-        addObject(character, 100, getHeight()/2);
-        
         // generate underground
         Ground underground = new Ground();
         addObject(underground, 150, getHeight());
-        
-        addObject(gameScore, getWidth() / 2 + 25, 30);
-        gameScore.setScore(0);
     }
     
     public void act() {
         createGround();
-        createPipe();
+        
+        if (showTitleScreen && !titleObjectsAdded) {
+            addObject(title, getWidth() / 2, 100);
+            addObject(titleButton, getWidth() / 2, getHeight() / 2);
+            titleObjectsAdded = true;
+        } else if (playGame) {
+            removeObject(title);
+            removeObject(titleButton);
+            if (!gameObjectsAdded) {
+                addObject(gameScore, getWidth() / 2 + 25, 30);
+                gameScore.setScore(0);
+                
+                // spawn Harry Potter on 100 and height/2
+                addObject(harry, 100, getHeight()/2);
+                
+                gameObjectsAdded = true;
+            }
+            createPipe();
+        }
     }
     
     private void createGround() {

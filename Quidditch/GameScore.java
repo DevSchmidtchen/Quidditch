@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * GameScore of a player
  * 
  * @author Matti Schmidt
- * @version 0.17
+ * @version 0.18
  */
 public class GameScore extends Actor
 {
